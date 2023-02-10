@@ -8,4 +8,4 @@ showonlyimage = false
 weight = 1
 +++
 
-Composition, gameplay, level design.
+Composition, sound design, implementation, gameplay, level design.
