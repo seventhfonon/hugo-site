@@ -1,27 +1,32 @@
-<p class="social">
+<div class="social">
   {{ with .Site.Params.social.email }}
-  <a href="mailto:{{ . }}" data-animate-hover="pulse" class="email" title="E-mail">
+  <div><a href="mailto:{{ . }}" class="email" title="E-mail">
     <i class="fa fa-envelope"></i>
-  </a>
+  </a></div>
   {{end}}
   {{ with .Site.Params.social.soundcloud }}
-  <a href="{{ . }}" data-animate-hover="pulse" class="external" title="SoundCloud" rel="me">
+  <div><a href="{{ . }}"  target="_blank" title="SoundCloud" rel="me">
     <i class="fa fa-soundcloud"></i>
-  </a>
+  </a></div>
   {{end}}
   {{ with .Site.Params.social.bandcamp }}
-  <a href="{{ . }}" data-animate-hover="pulse" class="external" title="Bandcamp" rel="me">
+  <div><a href="{{ . }}"  target="_blank" title="Bandcamp" rel="me">
     <i class="fa-brands fa-bandcamp"></i>
-  </a>
+  </a></div>
+  {{end}}
+  {{ with .Site.Params.social.itch }}
+  <div><a href="{{ . }}"  target="_blank" title="Itch" rel="me">
+    <i class="fa-brands fa-itch-io"></i>
+  </a></div>
   {{end}}
   {{ with .Site.Params.social.github }}
-  <a href="{{ . }}" data-animate-hover="pulse" class="external" title="GitHub" rel="me">
+  <div><a href="{{ . }}"  target="_blank" title="GitHub" rel="me">
     <i class="fa fa-github"></i>
-  </a>
+  </a></div>
   {{end}}
   {{ with .Site.Params.social.youtube }}
-  <a href="{{ . }}" data-animate-hover="pulse" class="external" title="YouTube" rel="me">
+  <div><a href="{{ . }}"  target="_blank" title="YouTube" rel="me">
     <i class="fa fa-youtube"></i>
-  </a>
+  </a></div>
   {{end}}
-</p>
+</div>

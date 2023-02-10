@@ -16,9 +16,17 @@
                   <div class="box-masonry">
                       {{ if and (isset .Params "image") .Params.image }}
                         {{ if eq .Params.showonlyimage true }}
-                        <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay">
+                          {{ if and (isset .Params "redirect") .Params.redirect }}
+                          <a href="{{ .Params.redirect }}" title="" class="box-masonry-image with-hover-overlay">
+                          {{ else }}
+                          <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay">
+                          {{ end }}
                         {{ else }}
-                        <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
+                          {{ if and (isset .Params "redirect") .Params.redirect }}
+                          <a href="{{ .Params.redirect }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
+                          {{ else }}
+                          <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
+                          {{ end }}
                         {{ end }}
                             <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
                         </a>
@@ -28,7 +36,13 @@
                       {{ else }}
                       <div class="box-masonry-text">
                       {{ end }}
-                          <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                          <h4>
+                            {{ if and (isset .Params "redirect") .Params.redirect }} 
+                            <a href="{{  .Params.redirect }}">{{ .Title }}</a>
+                            {{ else }}
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                          {{ end }}
+                          </h4>
                           <div class="box-masonry-description">
                             <p>
                                 {{ if .Description }}

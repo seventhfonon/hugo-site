@@ -7,19 +7,27 @@
          <h1>{{ .Title }}</h1>
          {{ .Content }}
          {{ with .Site.Params.email }}
-         <h4>Contact</h4>
          <form id="contact-form" class="contact-form form" method="post" action="https://formspree.io/{{ . }}">
            <div class="controls">
              <div class="form-group">
                <label for="name">Your name *</label>
-               <input type="text" name="name" id="name" required="required" class="form-control">
+               <input type="text" name="name" id="name" required="required" class="form-control" />
              </div>
              <div class="form-group">
                <label for="email">Your email *</label>
-               <input type="email" name="email" id="email" required="required" class="form-control">
+               <input type="email" name="email" id="email" required="required" class="form-control" />
              </div>
              <div class="form-group">
-               <label for="message">Your message for me *</label>
+              <label for="Topic">Topic *</label>
+              <select name="topic" id="topic" required="required" class="form-control">
+                <option value="Commission">Commission (composition/sound design)</option>
+                <option value="Commission">Commission (game development)</option>
+                <option value="Lessons">Taiko instruction or performance</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+             <div class="form-group">
+               <label for="message">Your message *</label>
                <textarea rows="4" name="message" id="message" required="required" class="form-control"></textarea>
              </div>
              <div>
