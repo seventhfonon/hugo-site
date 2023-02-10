@@ -309,7 +309,7 @@ header {
   .box-masonry {
     margin-top: 3em;
     background: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 1em;
     position: relative;
     box-shadow: 0 0 5px #ccc;
     -webkit-transition: all 0.2s ease-out;
