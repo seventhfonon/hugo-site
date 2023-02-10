@@ -1,0 +1,3 @@
+[submodule "superluumic.github.io"]
+	path = superluumic.github.io
+	url = git@github.com:superluumic/superluumic.github.io.git
