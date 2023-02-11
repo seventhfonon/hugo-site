@@ -51,6 +51,9 @@
                                   {{ .Summary }}
                                 {{ end }}
                             </p>
+                            {{ if and (isset .Params "bandcamp") .Params.bandcamp }}
+                            <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album={{ .Params.bandcamp_album }}/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="{{ .Params.bandcamp_url }}">{{ .Params.bandcamp_title }}</a></iframe>
+                            {{ end }}
                           </div>
                       </div>
                   </div>
