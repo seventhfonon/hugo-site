@@ -44,7 +44,12 @@
                           {{ end }}
                           </h4>
                           <div class="box-masonry-description">
-                            <p>
+                            <p class="description-tools">
+                              {{ if and (isset .Params "tools") .Params.tools }}
+                              {{ .Params.tools }}
+                              {{ end }}
+                            </p>
+                            <p class="description-details">
                                 {{ if .Description }}
                                   {{ .Description }}
                                 {{ else }}
@@ -53,6 +58,12 @@
                             </p>
                             {{ if and (isset .Params "bandcamp") .Params.bandcamp }}
                             <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album={{ .Params.bandcamp_album }}/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="{{ .Params.bandcamp_url }}">{{ .Params.bandcamp_title }}</a></iframe>
+                            {{ end }}
+                            {{ if and (isset .Params "soundcloud") .Params.soundcloud }}
+                            <iframe width="100%" height="300" scrolling="yes" frameborder="no" src="{{ .Params.soundcloud_player}}"></iframe><div style="font-size: 10px; color: #cccccc; line-break: anywhere;word-break: normal; overflow-y: scroll; overflow-x: hidden; white-space: nowrap; text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/superlumic" title="luumi (mathew)" target="_blank" style="color: #cccccc; text-decoration: none;">luumi (mathew)</a> · <a href="{{ .Params.soundcloud_url }}" title="{{ .Params.soundcloud_title }}" target="_blank" style="color: #cccccc; text-decoration: none;">{{ .Params.soundcloud_title}}</a></div>
+                            {{ end }}
+                            {{ if and (isset .Params "embed") .Params.embed }}
+                            <video src="{{ .Params.embed }} " controls />
                             {{ end }}
                           </div>
                       </div>
