@@ -1,5 +1,7 @@
 +++
 image = "img/portfolio/stars.jpg"
+staticimage = "img/portfolio/stars.jpg"
+
 showonlyimage = false
 redirect = "https://soundcloud.com/superlumic/sets/improvisation"
 

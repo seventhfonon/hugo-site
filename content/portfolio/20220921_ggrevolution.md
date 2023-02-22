@@ -1,5 +1,7 @@
 +++
 image = "img/portfolio/gondgond.gif"
+staticimage = "img/portfolio/gondgond.jpg"
+
 showonlyimage = false
 
 date = "2022-09-21T05:00:00-05:00"

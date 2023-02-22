@@ -1,6 +1,8 @@
 +++
 image = "img/portfolio/tlou4.png"
+staticimage = "img/portfolio/tlou4.png"
 showonlyimage = false
+
 date = "2022-09-07T05:00:00-5:00"
 title = "The Last of Us sound replacement demo"
 draft = false

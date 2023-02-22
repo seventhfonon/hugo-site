@@ -1,5 +1,7 @@
 +++
 image = "img/portfolio/nightmares.gif"
+staticimage = "img/portfolio/nightmares.jpg"
+
 redirect = "https://superlumic.itch.io/nightmares"
 showonlyimage = false
 

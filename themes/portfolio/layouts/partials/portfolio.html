@@ -28,7 +28,8 @@
                           <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay with-hover-icon">
                           {{ end }}
                         {{ end }}
-                            <img src="{{.Params.image | absURL}}" alt="" class="img-responsive">
+                            <img class="static img-responsive" src="{{.Params.staticimage | absURL}}" alt="Image of {{ .Title }}">
+                            <img class="active img-responsive" src="{{.Params.image | absURL}}" alt="Animated gif of {{ .Title }}">
                         </a>
                       {{ end }}
                       {{ if eq .Params.showonlyimage true }}

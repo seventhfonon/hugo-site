@@ -1,6 +1,8 @@
 +++
 image = "img/portfolio/hideandseek.png"
+staticimage = "img/portfolio/hideandseek.png"
 showonlyimage = false
+
 redirect = "https://superlumic.itch.io/halloween-hide-and-seek"
 
 bandcamp = true
