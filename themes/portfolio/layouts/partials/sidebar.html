@@ -1,25 +1,30 @@
-<div class="sidebar col-xs-12 col-sm-4 col-md-3 sidebar-offcanvas">
+<section class="sidebar col-xs-12 col-sm-4 col-md-3 sidebar-offcanvas">
   <div class="sidebar-content">
     <div class="sidebar-title row align-items-center">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
         <h1 class="sidebar-heading"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
       </div>
     </div>
+
     {{ range .Site.Params.sidebarAbout }}
       <p class="sidebar-p">{{ . | safeHTML }}</p>
     {{ end }}
-    <ul class="sidebar-menu">
+
+    <ul class="sidebar-menu" aria-label="Navigation">
       {{ range .Site.Params.navlinks }}
         <li><a href="{{ absURL .url }}">{{ .name }}</a></li>
       {{ end }}
     </ul>
+
     {{ partial "social.html" . }}
+    
     <div class="copyright">
       <p>© 2023 {{ .Site.Title }} /</p>
-      <img src="/img/lumic_text.png"></img>
+      <img src="/img/lumic_text.png" alt="Lumic Sound"></img>
     </div>
+    
     <div class="sidebar-img col-xs-12 col-sm-12 col-md-12 col-lg-12">
-      <img src="/img/lumic_flower.png"></img>
+      <img src="/img/lumic_flower.png" alt="Lumic Sound logo"></img>
     </div>
   </div>
-</div>
+</section>

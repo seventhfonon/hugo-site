@@ -100,13 +100,17 @@ text-align: center;
     width: 100%;
 }
 
-.social {
+.social-links {
     margin-top: 2em;
+    padding-left: 0em;
+
     position: relative;
     width: 100%;
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
     justify-content: space-around;
     align-items: center;
 }
@@ -140,6 +144,10 @@ text-align: center;
 .social a i {
     vertical-align: bottom;
     line-height: 40px;
+}
+
+.social li {
+    list-style: none;
 }
 
 /*

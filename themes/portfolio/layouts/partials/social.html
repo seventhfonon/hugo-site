@@ -1,32 +1,43 @@
 <div class="social">
-  {{ with .Site.Params.social.email }}
-  <div><a href="mailto:{{ . }}" class="email" title="E-mail">
-    <i class="fa fa-envelope"></i>
-  </a></div>
-  {{end}}
-  {{ with .Site.Params.social.soundcloud }}
-  <div><a href="{{ . }}"  target="_blank" title="SoundCloud" rel="me">
-    <i class="fa fa-soundcloud"></i>
-  </a></div>
-  {{end}}
-  {{ with .Site.Params.social.bandcamp }}
-  <div><a href="{{ . }}"  target="_blank" title="Bandcamp" rel="me">
-    <i class="fa-brands fa-bandcamp"></i>
-  </a></div>
-  {{end}}
-  {{ with .Site.Params.social.itch }}
-  <div><a href="{{ . }}"  target="_blank" title="Itch" rel="me">
-    <i class="fa-brands fa-itch-io"></i>
-  </a></div>
-  {{end}}
-  {{ with .Site.Params.social.github }}
-  <div><a href="{{ . }}"  target="_blank" title="GitHub" rel="me">
-    <i class="fa fa-github"></i>
-  </a></div>
-  {{end}}
-  {{ with .Site.Params.social.youtube }}
-  <div><a href="{{ . }}"  target="_blank" title="YouTube" rel="me">
-    <i class="fa fa-youtube"></i>
-  </a></div>
-  {{end}}
+
+  <ul aria-label="External links" class="social-links" role="list">
+    
+    {{ with .Site.Params.social.email }}
+    <li><a href="mailto:{{ . }}" class="email" title="E-mail">
+      <i class="fa fa-envelope"></i>
+    </a></li>
+    {{end}}
+   
+    {{ with .Site.Params.social.soundcloud }}
+    <li><a href="{{ . }}"  target="_blank" title="SoundCloud" rel="me">
+      <i class="fa fa-soundcloud"></i>
+    </a></li>
+    {{end}}
+    
+    {{ with .Site.Params.social.bandcamp }}
+    <li><a href="{{ . }}"  target="_blank" title="Bandcamp" rel="me">
+      <i class="fa fa-brands fa-bandcamp"></i>
+    </a></li>
+    {{end}}
+    
+    {{ with .Site.Params.social.itch }}
+    <li><a href="{{ . }}"  target="_blank" title="Itch" rel="me">
+      <i class="fa fa-brands fa-itch-io"></i>
+    </a></li>
+    {{end}}
+    
+    {{ with .Site.Params.social.github }}
+    <li><a href="{{ . }}"  target="_blank" title="GitHub" rel="me">
+      <i class="fa fa-github"></i>
+    </a></li>
+    {{end}}
+    
+    {{ with .Site.Params.social.youtube }}
+    <li><a href="{{ . }}"  target="_blank" title="YouTube" rel="me">
+      <i class="fa fa-youtube"></i>
+    </a></li>
+    {{end}}
+
+  </ul>
+
 </div>
