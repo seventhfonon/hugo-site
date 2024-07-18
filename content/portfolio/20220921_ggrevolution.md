@@ -6,12 +6,12 @@ showonlyimage = false
 
 date = "2022-09-21T05:00:00-05:00"
 title = "Gond Gond Revolution"
-redirect = "https://superlumic.itch.io/gondgondrevolution"
+redirect = "https://seventhfonon.itch.io/gondgondrevolution"
 
 bandcamp = true
 bandcamp_album = "2965772932"
-bandcamp_url = "https://superlumic.bandcamp.com/album/gond-gond-revolution-original-soundtrack"
-bandcamp_title = "GOND GOND REVOLUTION (Original Soundtrack) by luumi"
+bandcamp_url = "https://seventhfonon.bandcamp.com/album/gond-gond-revolution-original-soundtrack"
+bandcamp_title = "GOND GOND REVOLUTION (Original Soundtrack) by mathew jacqmin-kramer"
 
 tools = "Phaser"
 draft = false
